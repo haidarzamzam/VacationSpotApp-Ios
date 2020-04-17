@@ -32,6 +32,7 @@
                     <navigationItem key="navigationItem" id="d12-Mb-s62"/>
                     <connections>
                         <outlet property="vacationTableView" destination="1u1-tJ-mPJ" id="Xfm-WI-6zc"/>
+                        <segue destination="Q4y-bE-aOv" kind="show" identifier="DetailProfile" id="XCP-bu-JPu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -55,6 +56,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jhb-i2-B0J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </scene>
+        <!--Detail Profile View Controller-->
+        <scene sceneID="bpf-TK-8hU">
+            <objects>
+                <viewController id="Q4y-bE-aOv" customClass="DetailProfileViewController" customModule="VacationSpotApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2j1-Wh-Unr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QY0-D1-Omk">
+                                <rect key="frame" x="127" y="188" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="mxV-qU-dd0"/>
+                                    <constraint firstAttribute="height" constant="160" id="ta1-ug-Q73"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKc-vo-6iN">
+                                <rect key="frame" x="20" y="108" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M Haidar Zamzam R" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaR-v6-eo9">
+                                <rect key="frame" x="20" y="388" width="374" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="haidar.zamzam@icloud.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0h-19-xXP">
+                                <rect key="frame" x="20" y="423" width="374" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="K2j-Rx-8CD" firstAttribute="trailing" secondItem="bKc-vo-6iN" secondAttribute="trailing" constant="20" id="14Z-WU-vyG"/>
+                            <constraint firstItem="K2j-Rx-8CD" firstAttribute="trailing" secondItem="QY0-D1-Omk" secondAttribute="trailing" constant="127" id="2UV-Ci-MZR"/>
+                            <constraint firstItem="G0h-19-xXP" firstAttribute="leading" secondItem="K2j-Rx-8CD" secondAttribute="leading" constant="20" id="3af-bE-7j3"/>
+                            <constraint firstItem="K2j-Rx-8CD" firstAttribute="trailing" secondItem="G0h-19-xXP" secondAttribute="trailing" constant="20" id="9Dy-hR-fqw"/>
+                            <constraint firstItem="QY0-D1-Omk" firstAttribute="leading" secondItem="K2j-Rx-8CD" secondAttribute="leading" constant="127" id="A5R-gd-i7G"/>
+                            <constraint firstItem="K2j-Rx-8CD" firstAttribute="trailing" secondItem="UaR-v6-eo9" secondAttribute="trailing" constant="20" id="AJj-cY-h8K"/>
+                            <constraint firstItem="G0h-19-xXP" firstAttribute="top" secondItem="UaR-v6-eo9" secondAttribute="bottom" constant="8" id="CDp-uU-RyZ"/>
+                            <constraint firstItem="QY0-D1-Omk" firstAttribute="top" secondItem="bKc-vo-6iN" secondAttribute="bottom" constant="50" id="YT3-QM-N8p"/>
+                            <constraint firstItem="bKc-vo-6iN" firstAttribute="top" secondItem="K2j-Rx-8CD" secondAttribute="top" constant="20" id="cPp-1h-BFF"/>
+                            <constraint firstItem="bKc-vo-6iN" firstAttribute="leading" secondItem="K2j-Rx-8CD" secondAttribute="leading" constant="20" id="hMS-jA-1pT"/>
+                            <constraint firstItem="UaR-v6-eo9" firstAttribute="leading" secondItem="K2j-Rx-8CD" secondAttribute="leading" constant="20" id="ynv-de-aPB"/>
+                            <constraint firstItem="UaR-v6-eo9" firstAttribute="top" secondItem="QY0-D1-Omk" secondAttribute="bottom" constant="40" id="zeW-4w-3Gb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="K2j-Rx-8CD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sdD-ar-EYF"/>
+                    <connections>
+                        <outlet property="photoProfile" destination="QY0-D1-Omk" id="XWK-Co-wbD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bOz-Hw-ewT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1843" y="113"/>
         </scene>
     </scenes>
 </document>

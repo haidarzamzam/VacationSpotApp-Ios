@@ -9,16 +9,16 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    
     @IBOutlet weak var nameVacation: UILabel!
     @IBOutlet weak var photoVacation: UIImageView!
-    @IBOutlet weak var descVacation: UILabel!
+    @IBOutlet weak var descVacation: UITextView!
     
     var vacation: Vacation?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         if let result = vacation {
             nameVacation.text = result.name
             photoVacation.image = result.photo
@@ -29,6 +29,8 @@ class DetailViewController: UIViewController {
             photoVacation.contentMode = .scaleAspectFill
         }
         
+        
+        
     }
-
+    
 }

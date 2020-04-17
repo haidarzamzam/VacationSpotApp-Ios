@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA2BCC58244999C8006DC633 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BCC56244999C8006DC633 /* DetailViewController.swift */; };
+		FA2BCC59244999C8006DC633 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2BCC57244999C8006DC633 /* DetailViewController.xib */; };
 		FAD275FC2448C19200C2C514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD275FB2448C19200C2C514 /* AppDelegate.swift */; };
 		FAD275FE2448C19200C2C514 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD275FD2448C19200C2C514 /* SceneDelegate.swift */; };
 		FAD276002448C19200C2C514 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD275FF2448C19200C2C514 /* ViewController.swift */; };
@@ -17,11 +19,12 @@
 		FAD276122448C65400C2C514 /* VacationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD276102448C65400C2C514 /* VacationTableViewCell.xib */; };
 		FAD276182448CDE400C2C514 /* Vacation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD276172448CDE400C2C514 /* Vacation.swift */; };
 		FAD2761A2448CDFF00C2C514 /* DummyVacation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD276192448CDFF00C2C514 /* DummyVacation.swift */; };
-		FAD2761D244935D700C2C514 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2761B244935D700C2C514 /* DetailViewController.swift */; };
-		FAD2761E244935D700C2C514 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD2761C244935D700C2C514 /* DetailViewController.xib */; };
+		FAEE094224496EBA000BD340 /* DetailProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEE094124496EBA000BD340 /* DetailProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA2BCC56244999C8006DC633 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FA2BCC57244999C8006DC633 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		FAD275F82448C19200C2C514 /* VacationSpotApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VacationSpotApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD275FB2448C19200C2C514 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD275FD2448C19200C2C514 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,8 +37,7 @@
 		FAD276102448C65400C2C514 /* VacationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VacationTableViewCell.xib; sourceTree = "<group>"; };
 		FAD276172448CDE400C2C514 /* Vacation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vacation.swift; sourceTree = "<group>"; };
 		FAD276192448CDFF00C2C514 /* DummyVacation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyVacation.swift; sourceTree = "<group>"; };
-		FAD2761B244935D700C2C514 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		FAD2761C244935D700C2C514 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		FAEE094124496EBA000BD340 /* DetailProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,8 @@
 			children = (
 				FAD275FF2448C19200C2C514 /* ViewController.swift */,
 				FAD2760F2448C65400C2C514 /* VacationTableViewCell.swift */,
-				FAD2761B244935D700C2C514 /* DetailViewController.swift */,
+				FAEE094124496EBA000BD340 /* DetailProfileViewController.swift */,
+				FA2BCC56244999C8006DC633 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -109,7 +112,7 @@
 		FAD276162448CD8400C2C514 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FAD2761C244935D700C2C514 /* DetailViewController.xib */,
+				FA2BCC57244999C8006DC633 /* DetailViewController.xib */,
 				FAD276012448C19200C2C514 /* Main.storyboard */,
 				FAD276062448C19700C2C514 /* LaunchScreen.storyboard */,
 				FAD276102448C65400C2C514 /* VacationTableViewCell.xib */,
@@ -177,7 +180,7 @@
 			files = (
 				FAD276082448C19700C2C514 /* LaunchScreen.storyboard in Resources */,
 				FAD276052448C19700C2C514 /* Assets.xcassets in Resources */,
-				FAD2761E244935D700C2C514 /* DetailViewController.xib in Resources */,
+				FA2BCC59244999C8006DC633 /* DetailViewController.xib in Resources */,
 				FAD276122448C65400C2C514 /* VacationTableViewCell.xib in Resources */,
 				FAD276032448C19200C2C514 /* Main.storyboard in Resources */,
 			);
@@ -195,8 +198,9 @@
 				FAD275FC2448C19200C2C514 /* AppDelegate.swift in Sources */,
 				FAD2761A2448CDFF00C2C514 /* DummyVacation.swift in Sources */,
 				FAD276112448C65400C2C514 /* VacationTableViewCell.swift in Sources */,
+				FAEE094224496EBA000BD340 /* DetailProfileViewController.swift in Sources */,
 				FAD275FE2448C19200C2C514 /* SceneDelegate.swift in Sources */,
-				FAD2761D244935D700C2C514 /* DetailViewController.swift in Sources */,
+				FA2BCC58244999C8006DC633 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
